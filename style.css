@@ -7,8 +7,8 @@ body {
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 /* HERO STUFF */
@@ -137,13 +137,22 @@ img {
 
 
 .guide-img {
-    border-radius: 5px;
-    width: 90%;
+    border-radius: 25px 15px 15px 15px;
+    width: 150px;
     height: 200px;
+    padding-left: 15px;
     object-fit: cover;
     
 
     margin: 20px 0 0 0;
+}
+
+@media (max-width: 600px) {
+    .guide-img {
+        padding: 0px;
+        border-radius: 5px;
+        
+    }
 }
 
 .guide-info {
@@ -154,4 +163,24 @@ img {
 
 .guide-text {
     font-weight: 100;
+}
+
+
+
+.footer {
+    background-image: url(/images/victor-larracuente-941LuRQX3Go-unsplash.jpg);
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-text {
+    background-color: #1D3557;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0;
+    color: white;
+    font-size: 24px;
 }
