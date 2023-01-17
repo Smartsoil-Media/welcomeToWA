@@ -1,0 +1,153 @@
+
+body {
+    margin: 0;
+    text-align: center;
+    color: black;
+    font-family: 'Overpass', sans-serif;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/* HERO STUFF */
+
+#hero {
+    color: white;
+    margin: 0px;
+    background-image: url("/images/forrest.jpg");
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    #hero {
+        height: 100vh;
+    }
+}
+
+
+#hero-title {
+    background-color: #1D3557;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+#hero-sub-title {
+   background-color: #457B9D;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+/* CARD SUFF */
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.activities {
+    background-color: #264653;
+    padding: 25px 5% 50px 5%;
+    color: white;
+    text-shadow: 0 0 1pc black;
+
+}
+
+.card-one, .card-two, .card-three {
+    
+}
+
+.card-img {
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.card-img:hover {
+    transform: scale(120%);
+    cursor: pointer;
+}
+
+.card-title {
+    font-style: bold;
+    font-size: 20px;
+}
+
+.card-text {
+    font-weight: 100;
+}
+
+#activities-title {
+    font-size: 36px;
+}
+
+
+
+
+
+
+
+.guide-container {
+    min-height: 300px;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 10% auto;
+    background-color: #2a9d8f;
+    border-radius: 10px;
+    border-bottom: 10px solid #e76f51;
+}
+
+@media (max-width: 600px) {
+    .guide-container {
+        max-width: 80%;
+        
+    }
+}
+
+
+
+.guide-img {
+    border-radius: 5px;
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    
+
+    margin: 5px 25px;
+}
+
+.guide-info {
+    width: 75%;
+    padding: 0 25px;
+}
+
+.guide-text {
+    font-weight: 100;
+}
